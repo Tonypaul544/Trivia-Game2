@@ -1,0 +1,200 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  /* padding: 2em; */
+  height: 100vh;
+  width: 100vw;
+}
+
+.flipContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgba(134, 226, 134, 0.933); */
+  background-image: url(images//bg.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-attachment:scroll;
+  background-position: bottom;
+  
+}
+
+.flipHeader {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  margin: auto;
+  margin-bottom: 40px;
+  gap: 40%;
+  right: 0;
+  top: 15px;
+  position: fixed;
+  justify-content: space-between;
+  padding: 5px 50px;
+  /* background-color: rgb(194, 227, 225); */
+}
+
+.logoTXT {
+  width: 150px;
+  height: fit-content;
+  display: flex;
+  margin: auto;
+  /* margin-bottom: 40px; */
+}
+
+.flipbitLogo {
+  width: 150px;
+  height: auto;
+}
+
+.buttons {
+  width: 400px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aquamarine; */
+}
+
+.buttons button {
+  width: 65%;
+  height: 45px;
+  background-image: linear-gradient(rgba(62, 44, 44, 1), rgba(164, 116, 116, 1));
+  color: white;
+  border-radius: 9px;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.buttons button#playBTN {
+  all: unset;
+  width: 45%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgba(38, 154, 42, 1);
+  border: 2px solid rgba(152, 0, 0, 1);
+  border-radius: 20px;
+}
+
+div#empty {
+  width: 400px;
+  height: 100%;
+  /* background-color: aqua; */
+  z-index: 0;
+}
+
+.width {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  /* background-color: coral; */
+}
+
+.emptyLeft {
+  width: 30px;
+  height: 100%;
+  /* background-color: aqua; */
+}
+
+.sticker {
+  width: 160px;
+  height: 230px;
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 768px) {
+  .flipContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images//bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: bottom;
+  }
+
+  .flipHeader {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 40px;
+    gap: 35%;
+    box-sizing: border-box;
+    right: 0;
+    top: 15px;
+    position: fixed;
+    justify-content: space-between;
+    padding: 5px 50px;
+  }
+
+  .logoTXT {
+    width: 70px;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    /* margin-bottom: 40px; */
+  }
+
+  .flipbitLogo {
+    width: 150px;
+    height: 100%;
+  }
+
+  .emptyLeft, .sticker {
+    display: none;
+    display: none;
+  }
+
+  .buttons button {
+    width: 85%;
+    height: 55px;
+    margin-bottom: 10px;
+
+  }
+
+  .buttons button#playBTN {
+    all: unset;
+    width: 65%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(38, 154, 42, 1);
+    border: 2px solid rgba(152, 0, 0, 1);
+    border-radius: 50px;
+  }
+
+
+
+
+
+
+}
